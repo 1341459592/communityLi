@@ -1,0 +1,80 @@
+2020-08-24 00:53:10.673  INFO 6432 --- [restartedMain] l.liming.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-8D32BRB with PID 6432 (D:\IdeaProjects\comm\communityLi\target\classes started by sony in D:\IdeaProjects\comm\communityLi)
+2020-08-24 00:53:10.738  INFO 6432 --- [restartedMain] l.liming.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-08-24 00:53:11.675  INFO 6432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-24 00:53:11.676  INFO 6432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-24 00:53:15.608  INFO 6432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-08-24 00:53:15.620  INFO 6432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-24 00:53:15.620  INFO 6432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-24 00:53:16.239  INFO 6432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-24 00:53:16.240  INFO 6432 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4564 ms
+2020-08-24 00:53:18.420  INFO 6432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-24 00:53:18.519  INFO 6432 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-24 00:53:19.327  WARN 6432 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-08-24 00:53:19.441  INFO 6432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-08-24 00:53:19.467  INFO 6432 --- [restartedMain] l.liming.community.CommunityApplication  : Started CommunityApplication in 15.902 seconds (JVM running for 27.947)
+2020-08-24 00:54:23.664  INFO 6432 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-24 00:54:23.665  INFO 6432 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-24 00:54:23.689  INFO 6432 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2020-08-24 00:54:23.881  INFO 6432 --- [http-nio-8889-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-24 00:54:27.022  INFO 6432 --- [http-nio-8889-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-24 00:54:27.037 DEBUG 6432 --- [http-nio-8889-exec-1] l.l.c.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2020-08-24 00:54:27.074 DEBUG 6432 --- [http-nio-8889-exec-1] l.l.c.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2020-08-24 00:54:27.144 DEBUG 6432 --- [http-nio-8889-exec-1] l.l.c.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2020-08-24 00:54:27.152 DEBUG 6432 --- [http-nio-8889-exec-1] l.l.c.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-08-24 00:54:27.153 DEBUG 6432 --- [http-nio-8889-exec-1] l.l.c.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2020-08-24 00:54:27.167 DEBUG 6432 --- [http-nio-8889-exec-1] l.l.c.m.Q.selectBySearch                 : <==      Total: 0
+2020-08-24 00:54:27.168 DEBUG 6432 --- [http-nio-8889-exec-2] l.l.c.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2020-08-24 00:54:27.169 DEBUG 6432 --- [http-nio-8889-exec-2] l.l.c.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2020-08-24 00:54:27.172 DEBUG 6432 --- [http-nio-8889-exec-2] l.l.c.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2020-08-24 00:54:27.173 DEBUG 6432 --- [http-nio-8889-exec-2] l.l.c.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-08-24 00:54:27.174 DEBUG 6432 --- [http-nio-8889-exec-2] l.l.c.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2020-08-24 00:54:27.180 DEBUG 6432 --- [http-nio-8889-exec-2] l.l.c.m.Q.selectBySearch                 : <==      Total: 0
+2020-08-24 00:54:47.641 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2020-08-24 00:54:47.643 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2020-08-24 00:54:47.645 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2020-08-24 00:54:47.646 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-08-24 00:54:47.646 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2020-08-24 00:54:47.649 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.Q.selectBySearch                 : <==      Total: 0
+2020-08-24 00:54:49.361 DEBUG 6432 --- [http-nio-8889-exec-10] l.l.c.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2020-08-24 00:54:49.362 DEBUG 6432 --- [http-nio-8889-exec-10] l.l.c.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2020-08-24 00:54:49.367 DEBUG 6432 --- [http-nio-8889-exec-10] l.l.c.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2020-08-24 00:54:49.368 DEBUG 6432 --- [http-nio-8889-exec-10] l.l.c.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-08-24 00:54:49.369 DEBUG 6432 --- [http-nio-8889-exec-10] l.l.c.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2020-08-24 00:54:49.371 DEBUG 6432 --- [http-nio-8889-exec-10] l.l.c.m.Q.selectBySearch                 : <==      Total: 0
+2020-08-24 00:54:49.730 DEBUG 6432 --- [http-nio-8889-exec-7] l.l.c.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2020-08-24 00:54:49.731 DEBUG 6432 --- [http-nio-8889-exec-7] l.l.c.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2020-08-24 00:54:49.733 DEBUG 6432 --- [http-nio-8889-exec-7] l.l.c.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2020-08-24 00:54:49.737 DEBUG 6432 --- [http-nio-8889-exec-7] l.l.c.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-08-24 00:54:49.737 DEBUG 6432 --- [http-nio-8889-exec-7] l.l.c.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2020-08-24 00:54:49.739 DEBUG 6432 --- [http-nio-8889-exec-7] l.l.c.m.Q.selectBySearch                 : <==      Total: 0
+2020-08-24 00:54:50.106 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2020-08-24 00:54:50.106 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2020-08-24 00:54:50.108 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2020-08-24 00:54:50.109 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-08-24 00:54:50.110 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2020-08-24 00:54:50.111 DEBUG 6432 --- [http-nio-8889-exec-3] l.l.c.m.Q.selectBySearch                 : <==      Total: 0
+2020-08-24 01:18:32.517  INFO 5116 --- [restartedMain] l.liming.community.CommunityApplication  : Starting CommunityApplication on DESKTOP-8D32BRB with PID 5116 (D:\IdeaProjects\comm\communityLi\target\classes started by sony in D:\IdeaProjects\comm\communityLi)
+2020-08-24 01:18:32.521  INFO 5116 --- [restartedMain] l.liming.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-08-24 01:18:32.887  INFO 5116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-24 01:18:32.888  INFO 5116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-24 01:18:37.498  INFO 5116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-08-24 01:18:37.556  INFO 5116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-24 01:18:37.556  INFO 5116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-24 01:18:38.029  INFO 5116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-24 01:18:38.030  INFO 5116 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5142 ms
+2020-08-24 01:18:40.043  INFO 5116 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-24 01:18:40.133  INFO 5116 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-24 01:18:41.341  INFO 5116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-24 01:18:41.488  INFO 5116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-08-24 01:18:41.512  INFO 5116 --- [restartedMain] l.liming.community.CommunityApplication  : Started CommunityApplication in 11.167 seconds (JVM running for 19.54)
+2020-08-24 01:19:05.912  INFO 5116 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-24 01:19:05.913  INFO 5116 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-24 01:19:05.949  INFO 5116 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 36 ms
+2020-08-24 01:19:06.190  INFO 5116 --- [http-nio-8889-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-24 01:19:08.738  INFO 5116 --- [http-nio-8889-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-24 01:19:08.773 DEBUG 5116 --- [http-nio-8889-exec-1] l.l.c.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2020-08-24 01:19:08.800 DEBUG 5116 --- [http-nio-8889-exec-1] l.l.c.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2020-08-24 01:19:09.034 DEBUG 5116 --- [http-nio-8889-exec-1] l.l.c.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2020-08-24 01:19:09.059 DEBUG 5116 --- [http-nio-8889-exec-1] l.l.c.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-08-24 01:19:09.061 DEBUG 5116 --- [http-nio-8889-exec-1] l.l.c.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2020-08-24 01:19:09.064 DEBUG 5116 --- [http-nio-8889-exec-1] l.l.c.m.Q.selectBySearch                 : <==      Total: 0
